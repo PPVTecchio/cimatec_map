@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cimatec_map</name>
+  <version>0.0.0</version>
+  <description>Creating gazebo map of SENAI CIMATEC</description>
+
+  <maintainer email="pedro.tecchio@fbter.org.br">Pedro Tecchio</maintainer>
+  <license>BSD</license>
+
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>gazebo</build_depend>
+  <build_export_depend>gazebo</build_export_depend>
+  <exec_depend>gazebo</exec_depend>
+
+  <export>
+
+  </export>
+</package>
