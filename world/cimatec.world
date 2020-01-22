@@ -1,78 +1,12 @@
 <?xml version="1.0"?>
 <sdf version="1.4">
   <world name="default">
-    <!-- <include>
-      <uri>model://ground_plane</uri>
-    </include> -->
     <include>
       <uri>model://sun</uri>
     </include>
-    <!-- <model name='ground_plane'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>150 75</size>
-            </plane>
-          </geometry>
-          <surface>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-            </friction>
-            <bounce/>
-            <contact>
-              <ode/>
-            </contact>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>150 75</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-          </material>
-        </visual>
-        <velocity_decay>
-          <linear>0</linear>
-          <angular>0</angular>
-        </velocity_decay>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-        <gravity>1</gravity>
-      </link>
-    </model> -->
-    <model name="concrete_structures">
-      <pose>-30 9 0  0 0 0</pose>
-      <static>true</static>
-      <link name="body">
-        <visual name="visual">
-          <geometry>
-            <mesh><uri>file://SENAI_CIMATEC.stl</uri></mesh>
-          </geometry>
-        </visual>
-        <collision name='collision'>
-          <geometry>
-            <mesh>
-              <uri>file://SENAI_CIMATEC.stl</uri>
-            </mesh>
-          </geometry>
-        </collision>
-      </link>
-    </model>
+    <include>
+      <uri>model://senai_cimatec</uri>
+    </include>
     <model name='Construction Cone 00'>
       <link name='link'>
         <collision name='collision'>
