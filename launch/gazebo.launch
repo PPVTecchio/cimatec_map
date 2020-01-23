@@ -9,7 +9,7 @@
   <arg name="debug"         default="false"/>
 
   <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find cimatec_map)/model"/>
-  <env name="7" value="${GAZEBO_RESOURCE_PATH}:$(find cimatec_map)/model"/>
+  <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find cimatec_map)/model"/>
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name"    value="$(find cimatec_map)/world/cimatec.world"/>
