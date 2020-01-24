@@ -6,13 +6,13 @@
     <link name="building_structures">
       <visual name="visual">
         <geometry>
-          <mesh><uri>file://senai_cimatec/mesh/senai_cimatec.stl</uri></mesh>
+          <mesh><uri>file://senai_cimatec/mesh/senai_cimatec.dae</uri></mesh>
         </geometry>
       </visual>
       <collision name='collision'>
         <geometry>
           <mesh>
-            <uri>file://senai_cimatec/mesh/senai_cimatec.stl</uri>
+            <uri>file://senai_cimatec/mesh/senai_cimatec.dae</uri>
           </mesh>
         </geometry>
         <surface>
